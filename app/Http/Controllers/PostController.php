@@ -85,9 +85,9 @@ class PostController extends Controller
     #[BodyParam(name: 'content', description: '文章內容', type: 'string', example: '早安')]
     #[Response( status: 200, description: '新增失敗' )]
     #[ResponseField(name: 'id', description: '文章ID', example: 1)]
-    public function store(PostRequest  $request)
+    public function store(Request $request)
     {
-
+        dd('test');
         //對要求進行驗證
         // $validatedData  = $request->validate([
         //     'title' => 'required|max:255|unique:posts',
